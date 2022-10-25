@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+body {
+    background-color: greenyellow;
+}
+
+main {
+    background-color: white;   
+    margin: auto;
+    padding: .9em;
+    
+}
+
+    main h1 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin: .5em;
+        
+    }
+
+section {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    margin: 1.1em 0;
+    border-radius: .9em;
+}
+
+div.img{
+    width: 30%;
+    background: url(imagem-teste.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: .8em 0 0 .8em;
+}
+
+div.desc{
+    width: 70%;
+    padding: 1.2em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 .8em .8em 0;
+}
+
+div.desc h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: .1em;
+}
+
+div.desc p {
+    margin-bottom: 1em;
+}
+
+div.desc button, div.desc a{
+    padding: .5em;
+    background-color: rgb(113, 22, 199);
+    color: white;
+    border: none;
+    height: 2.5em;
+    border-radius: .4em;
+}
