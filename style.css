@@ -17,9 +17,12 @@ body {
 
 main {
     background-color: white;   
-    margin: auto;
-    padding: .9em;
-    
+    box-sizing: border-box;
+    margin: 1em auto;
+    padding: 1.4em;
+    border-radius: .8em;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.13);
+    width: 95%;
 }
 
     main h1 {
@@ -29,6 +32,35 @@ main {
         margin: .5em;
         
     }
+
+nav {
+        background-color: violet;
+        margin: 0 -1.4em;
+        padding: .5em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    background-color: transparent;
+    min-width: 15%;
+    padding: 0 1em;
+    text-align: center;
+    height: 2em;
+    line-height: 200%;
+    border-radius: .2em;
+    border: 1px solid white;
+    color: white;
+} 
+    li:hover {
+        cursor: pointer;
+    }
+
+
 
 section {
     background-color: rgb(216, 216, 216);
@@ -48,9 +80,7 @@ div.desc{
     width: 70%;
     padding: 1.2em;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     border-radius: 0 .8em .8em 0;
 }
 
@@ -64,11 +94,15 @@ div.desc p {
     margin-bottom: 1em;
 }
 
-div.desc button, div.desc a{
+div.desc a{
     padding: .5em;
     background-color: rgb(113, 22, 199);
     color: white;
     border: none;
-    height: 2.5em;
+    height: 1.6em;
     border-radius: .4em;
+    text-align: center;
+    line-height: 1.6em;
+    width: 50%;
+    justify-self: center;
 }
