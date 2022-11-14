@@ -12,7 +12,7 @@
 
 
 body {
-    background-color: greenyellow;
+    background-color: rgb(179, 179, 179);
 }
 
 main {
@@ -67,6 +67,7 @@ section {
     display: flex;
     margin: 1.1em 0;
     border-radius: .9em;
+    transition: all .5s ease;
 }
 
 div.img{
@@ -91,7 +92,13 @@ div.desc h2 {
 }
 
 div.desc p {
+    margin-bottom: .5em;
+}
+
+div.desc aside {
+    font-size: 1em;
     margin-bottom: 1em;
+    color: rgba(0, 0, 0, 0.527);
 }
 
 div.desc a{
@@ -106,3 +113,12 @@ div.desc a{
     width: 50%;
     justify-self: center;
 }
+
+footer {
+    text-align: center;
+    font-size: .9em;
+    margin: 2em 0;
+}
+    footer a {
+        color: blue;
+    }
