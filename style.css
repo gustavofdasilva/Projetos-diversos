@@ -55,6 +55,8 @@ li {
     border-radius: .2em;
     border: 1px solid white;
     color: white;
+
+    transition: all ease 0.3s;
 } 
     li:hover {
         cursor: pointer;
