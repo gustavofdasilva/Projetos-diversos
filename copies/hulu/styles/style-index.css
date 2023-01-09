@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Graphik";
+    src: url('../Graphik_Collection/Graphik Family/Graphik-Regular-Trial.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+    @font-face {
+        font-family: "Graphik";
+        src: url('../Graphik_Collection/Graphik Family/Graphik-Semibold-Trial.otf');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.landing-page {
+    background: url(../images/original.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Graphik";
+}
+
+header {
+    background: linear-gradient(to bottom, #000000, #00000041);
+    height: 5.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.4em;
+}
+    header>img {
+        width: 18%;
+    }
+
+    header > button {
+        background-color: #323843;
+        border: none;
+        height: 45%;
+        width: 14%;
+        border-radius: .6em;
+    }
+        header > button > img {
+            width: 35%;
+            filter: invert(1);
+            height: 35%;
+        }
+
+div.bundle-trio {
+    text-align: center;
+    margin-top: 1.9em;
+}
+    div.bundle-trio>aside {
+        color: #1CE783;
+        font-weight: bold;
+        font-size: .7em;
+    }
