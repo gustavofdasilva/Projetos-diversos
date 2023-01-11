@@ -53,10 +53,16 @@ header {
 
 div.bundle-trio {
     text-align: center;
-    margin-top: 1.9em;
+    padding-top: 1.9em;
+    background-color: #00000041;
 }
     div.bundle-trio>aside {
         color: #1CE783;
-        font-weight: bold;
+        font-weight: normal;
         font-size: .7em;
     }
+
+    div.bundle-trio>img {
+        width: 75%;
+    }
+    div.bundle-trio
