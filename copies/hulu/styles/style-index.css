@@ -31,6 +31,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Graphik';
 }
 
 
@@ -79,7 +80,7 @@ div.bundle-trio {
     display: flex;
     flex-direction: column;
 }
-    div.bundle-trio>aside,div.bundle-duo>aside {
+    div.bundle-trio>aside,div.bundle-duo>aside,aside.highlight {
         color: #1CE783;
         font-weight: bold;
         font-size: .8em;
@@ -176,3 +177,108 @@ div.bundle-duo {
         width: 20%;
         align-self: center;
     }
+
+div.libraries {
+    background-color: #0b0c0f;
+    padding: 1.8em 1em 3.5em 1em;
+    text-align: center;
+}
+    aside.highlight{
+        font-size: 1em;
+        font-weight: normal;
+    }
+    div.libraries>h2{
+        font-weight: normal;
+        margin-bottom: .3em;
+    }
+    div.libraries>p{
+        font-size: .95em;
+        padding: 0 1.2em ;
+        margin: 0 0 2em 0;
+    }
+
+    div.boxes {
+        display: grid;
+        grid-template-rows: 32vh 32vh 5vh;
+        grid-template-columns:  42vw 42vw;
+        grid-template-areas: 
+        "l1 l2"
+        "l3 l4"
+        "aside aside";
+        gap: 1em;
+        justify-content: center;
+        margin-bottom: 10em;
+    }
+        div.library {
+            background-color: #1CE783;
+            width: 100%;
+            height: 100%;
+            text-align: start;
+        }
+            div.library>div>p{
+                padding: .2em 0 .2em .8em;
+                font-size: 1.2em;
+            }
+                div.library#l3>p {
+                    padding:.2em 1em .2em .8em;;
+                }
+            div.library>div>aside {
+                padding: 1em 0 .2em .8em;
+            }
+
+            div.library>div{
+                background: linear-gradient(#000000,#00000000);
+                height: 60%;
+            }
+
+            div.boxes>aside {
+                font-size: .5em;
+                justify-self: end;
+                color: grey;
+                font-weight: bold;
+            }
+
+            div.l1{
+                background: url(../images/bb.png);
+                background-size: cover;
+            }
+            div.l2{
+                background: url(../images/prey.png);
+                background-size: cover;
+            }
+            div.l3{
+                background: url(../images/tht.png);
+                background-size: cover;
+            }
+            div.l4{
+                background: url(../images/hotd.png);
+                background-size: cover;
+            }   
+
+        div.libraries>aside.h2{
+            font-weight: bold;
+            font-size: .75em;
+        }
+        
+        div.libraries>h2.h2{
+            font-weight: bolder;
+            font-size: 2.1em;
+        }
+        div.libraries>aside.aside3{
+            color: gray;
+            font-weight: bold;
+            font-size: .65em;
+            margin-bottom: 2em;
+        }
+        div.libraries>a{
+            font-weight: bold;
+            color: rgb(167, 167, 167);
+            font-size: .85em;
+            margin-bottom: 3em;
+            display: block;
+        }
+        div.libraries>img{
+            display: block;
+            margin: auto;
+            width: 20px;
+        }
