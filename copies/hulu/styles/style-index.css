@@ -34,22 +34,27 @@
     font-family: 'Graphik';
 }
 
+.fadeblack{
+    z-index: 2;
+    background-color: #00000038;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .landing-page {
     background: url(../images/original.jpg) no-repeat;
     background-size: cover;
     background-color: #1CE783;
     width: 100%;
-    height: 100vh;
     font-family: "Graphik";
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 header {
-    background: linear-gradient(to bottom, #000000, #00000041);
-    height: 10%;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000000, #00000000);
+    height: 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,10 +78,10 @@ header {
         }
 
 div.bundle-trio {
+    z-index: 1;
     text-align: center;
     padding: 1em 2.5em;
-    background-color: #00000041;
-    height: 50%;
+    margin: 1em 0;
     display: flex;
     flex-direction: column;
 }
@@ -132,10 +137,10 @@ div.bundle-duo {
     background-color: #000000b0;
     text-align: center;
     width: 100%;
-    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1em 0;
 }
     div.bundle-duo>aside {
         margin: 1em 0 1em 0;
@@ -282,3 +287,5 @@ div.libraries {
             margin: auto;
             width: 20px;
         }
+
+        
