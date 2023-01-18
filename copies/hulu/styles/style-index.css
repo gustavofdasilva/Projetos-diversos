@@ -51,7 +51,7 @@
     font-family: "Graphik";
 }
 
-.landing-page>header {
+.landing-page header {
     z-index: 1;
     background: linear-gradient(to bottom, #000000, #00000000);
     height: 4em;
@@ -60,18 +60,18 @@
     align-items: center;
     padding: 0 1.4em;
 }
-    .landing-page>header>img {
+    .landing-page header img {
         width: 18%;
     }
 
-    .landing-page>header > button {
+    .landing-page header button {
         background-color: #323843;
         border: none;
         height: 60%;
         width: 14%;
         border-radius: .6em;
     }
-        .landing-page>header > button > img {
+        .landing-page header button img {
             width: 35%;
             filter: invert(1);
             height: 35%;
@@ -298,6 +298,7 @@ div.slides {
         z-index: -1;
     }
     div.slides header {
+        text-align: center;
         display: flex;
         justify-content: space-between;
         padding: 2em 1em 5em;
@@ -308,14 +309,10 @@ div.slides {
             font-size: .75em;
         }
 
-        div.slides header button:active{
-            border-bottom: 3px solid white;
-        }
-
-        div.slides .line{
+        div.slides #line{
             position: absolute;
             background-color: white;
-            width: 100%;
+            width: 30%;
             height: 0.5em;
             margin: -4em 0;
         }
