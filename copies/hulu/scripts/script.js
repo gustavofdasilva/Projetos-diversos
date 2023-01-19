@@ -4,11 +4,12 @@ let BigEvent = document.getElementById("biggest-events");
 let line = document.getElementById("line");
 let title = document.querySelector("div.slides>section>h2");
 let p = document.querySelector("div.slides>section>p");
-let bgImage = document.querySelector("div.slides>img");
 let logo1 = document.getElementById("lo1");
 let logo2 = document.getElementById("lo2");
 let logo3 = document.getElementById("lo3");
 let logo4 = document.getElementById("lo4");
+let slides = document.getElementById("slides");
+
 
 line.style.setProperty("left",LiveSports.getBoundingClientRect().left+"px");
 line.style.setProperty("width", LiveSports.getBoundingClientRect().right - LiveSports.getBoundingClientRect().left + "px");
@@ -22,12 +23,14 @@ function changeSlide(id) {
         p.innerHTML = 
         (`Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.
         `)
-        bgImage.src = "images/Backgrounds/live-sports.jfif"
-        logo1.style.background = "url(./images/logos/live-sports/CBS.png) no-repeat";
-        logo2.style.background = "url(./images/logos/live-sports/ESPN.png) no-repeat";
-        logo3.style.background = "url(./images/logos/live-sports/Fox.svg) no-repeat";
-        logo4.style.background = "url(./images/logos/live-sports/NFL.png) no-repeat";
+        slides.style.setProperty('background',"#00000056 url(./images/Backgrounds/live-sports.jfif");
 
+        setBackground(slides,"#00000056","url(./images/Backgrounds/live-sports.jfif)","100%","auto");
+    
+        setBackground(logo1,"#FFFFFF","url(./images/logos/live-sports/CBS.png)","contain","10%");
+        setBackground(logo2,"#FFFFFF","url(./images/logos/live-sports/ESPN.png)","contain","10%");
+        setBackground(logo3,"#FFFFFF","url(./images/logos/live-sports/Fox.svg)","contain","10%");
+        setBackground(logo4,"#FFFFFF","url(./images/logos/live-sports/NFL.png)","contain","10%");
         LiveSports.style.setProperty("color", "#ffffff");
         BNews.style.setProperty("color", "#ffffff80");
         BigEvent.style.setProperty("color", "#ffffff80");
@@ -39,11 +42,14 @@ function changeSlide(id) {
         p.innerHTML = 
         (`Keep pace with what's going on locally and globally with trusted opinions from all the top news networks.
         `)
-        bgImage.src = "images/Backgrounds/breaking-news.jfif"
-        logo1.style.background = "url(./images/logos/breaking-news/abc.png) no-repeat";
-        logo2.style.background = "url(./images/logos/breaking-news/CNN.svg) no-repeat";
-        logo3.style.background = "url(./images/logos/breaking-news/msnbc.png) no-repeat";
-        logo4.style.background = "url(./images/logos/breaking-news/foxnews.svg) no-repeat";
+        slides.style.setProperty('background',"#00000056 url(./images/Backgrounds/breaking-news.jfif");
+
+        setBackground(slides,"#00000056","url(./images/Backgrounds/breaking-news.jfif)","100%","auto");
+
+        setBackground(logo1,"#FFFFFF","url(./images/logos/breaking-news/abc.png)","contain","10%");
+        setBackground(logo2,"#FFFFFF","url(./images/logos/breaking-news/CNN.svg)","contain","10%");
+        setBackground(logo3,"#FFFFFF","url(./images/logos/breaking-news/msnbc.png)","contain","10%");
+        setBackground(logo4,"#FFFFFF","url(./images/logos/breaking-news/foxnews.svg)","contain","10%");
 
         LiveSports.style.setProperty("color", "#ffffff80");
         BNews.style.setProperty("color", "#ffffff");
@@ -55,14 +61,24 @@ function changeSlide(id) {
         p.innerHTML = 
         (`Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.
         `)
-        bgImage.src = "images/Backgrounds/biggest-events.jfif"
-        logo1.style.background = "url(./images/logos/biggest-events/1.png) no-repeat";
-        logo2.style.background = "url(./images/logos/biggest-events/golden.png) no-repeat";
-        logo3.style.background = "url(./images/logos/biggest-events/grammy.png) no-repeat";
-        logo4.style.background = "url(./images/logos/biggest-events/oscars.png) no-repeat";
+        
+        setBackground(slides,"#00000056","url(./images/Backgrounds/biggest-events.jfif)","100%","auto");
+        
+        setBackground(logo1,"#FFFFFF","url(./images/logos/biggest-events/1.png)","contain","10%");
+        setBackground(logo2,"#FFFFFF","url(./images/logos/biggest-events/golden.png)","contain","10%");
+        setBackground(logo3,"#FFFFFF","url(./images/logos/biggest-events/grammy.png)","contain","10%");
+        setBackground(logo4,"#FFFFFF","url(./images/logos/biggest-events/oscars.png)","contain","10%");
 
         LiveSports.style.setProperty("color", "#ffffff80");
         BNews.style.setProperty("color", "#ffffff80");
         BigEvent.style.setProperty("color", "#ffffff");
     }
+}
+
+
+function setBackground(element, color, url, size, position) {
+    element.style.setProperty("background",url+","+color);
+    element.style.setProperty("background-size",size);
+    element.style.setProperty("background-position",position);
+    element.style.setProperty("background-repeat","no-repeat");
 }

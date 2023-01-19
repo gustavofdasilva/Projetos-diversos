@@ -290,19 +290,16 @@ div.libraries {
 
 div.slides {
     background-color: #00000056;
-    height: 45.56em;
+    background: url(../images/Backgrounds/live-sports.jfif) no-repeat;
+    background-size: 100%;
+    height: calc(2.02 * 100vw);
 }
-    div.slides>img {
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-    }
     div.slides header {
         text-align: center;
         display: flex;
         justify-content: space-between;
         padding: 2em 1em 5em;
-        background: linear-gradient(to bottom, #000000, #00000000);
+        background: linear-gradient(to bottom, #0b0c0f, #00000000);
     }
         div.slides header button {
             font-weight: bold;
@@ -352,6 +349,7 @@ div.slides {
             border-radius: 50%;
             background-size: contain;
             background-position: 10%;
+            background-color: #FFFFFF;
         }
             .lo1{
                 background: url(../images/logos/live-sports/CBS.png) no-repeat;
