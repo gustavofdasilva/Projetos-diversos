@@ -308,12 +308,14 @@ div.slides {
             font-weight: bold;
             font-size: .75em;
         }
+            #breaking-news{color: #ffffff80;}
+            #biggest-events{color: #ffffff80;}
 
         div.slides #line{
             position: absolute;
             background-color: white;
             width: 30%;
-            height: 0.5em;
+            height: 0.4em;
             margin: -4em 0;
         }
     div.slides header button {
@@ -348,27 +350,21 @@ div.slides {
             position: relative;
             overflow: hidden;
             border-radius: 50%;
-            background-color: white;
+            background-size: contain;
+            background-position: 10%;
         }
             .lo1{
                 background: url(../images/logos/live-sports/CBS.png) no-repeat;
-                background-size: contain;
-                background-position: 10%;
+                
             }
             .lo2{
                 background: url(../images/logos/live-sports/ESPN.png) no-repeat;
-                background-size: contain;
-                background-position: 10%;
             }
             .lo3{
                 background: url(../images/logos/live-sports/Fox.svg) no-repeat;
-                background-size: contain;
-                background-position: 10%;
             }
             .lo4{
                 background: url(../images/logos/live-sports/NFL.png) no-repeat;
-                background-size: contain;
-                background-position: 10%;
             }
         div.slides section aside{
             margin: 3em 2em 0;
@@ -376,7 +372,9 @@ div.slides {
         }
         div.slides section aside p{
             display: inline;
+            color: #ffffff80;
         }
         div.slides section aside a{
             display: inline;
+            color: #ffffff80;
         }
