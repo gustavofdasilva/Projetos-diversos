@@ -9,6 +9,8 @@ let logo2 = document.getElementById("lo2");
 let logo3 = document.getElementById("lo3");
 let logo4 = document.getElementById("lo4");
 let slides = document.getElementById("slides");
+let dropdown = document.querySelectorAll("footer ul");
+let buttonDropdown = document.querySelectorAll("footer button");
 
 
 line.style.setProperty("left",LiveSports.getBoundingClientRect().left+"px");
@@ -75,10 +77,44 @@ function changeSlide(id) {
     }
 }
 
-
 function setBackground(element, color, url, size, position) {
     element.style.setProperty("background",url+","+color);
     element.style.setProperty("background-size",size);
     element.style.setProperty("background-position",position);
     element.style.setProperty("background-repeat","no-repeat");
+}
+
+function footerDropMenu(type) {
+    /*for (let i = 0 ; i < dropdown.length ; i++) {
+        dropdown[i].style.setProperty("display","none");
+    }*/
+    if(type == "browse") {
+        for (let i = 0 ; i < dropdown.length ; i++) {
+            if(dropdown[i].className == "browse" && dropdown[i].style.display == "none") {
+                dropdown[i].style.setProperty("display","block");
+            } else if (dropdown[i].className == "browse") {
+                dropdown[i].style.setProperty("display","none");
+            }
+        }
+    }
+
+    if(type == "help") {
+        for (let i = 0 ; i < dropdown.length ; i++) {
+            if(dropdown[i].className == "help" && dropdown[i].style.display == "none") {
+                dropdown[i].style.setProperty("display","block");
+            } else if (dropdown[i].className == "help") {
+                dropdown[i].style.setProperty("display","none");
+            }
+        }
+    }
+
+    if(type == "aboutus") {
+        for (let i = 0 ; i < dropdown.length ; i++) {
+            if(dropdown[i].className == "aboutus" && dropdown[i].style.display == "none") {
+                dropdown[i].style.setProperty("display","block");
+            } else if (dropdown[i].className == "aboutus") {
+                dropdown[i].style.setProperty("display","none");
+            }
+        }
+    }
 }

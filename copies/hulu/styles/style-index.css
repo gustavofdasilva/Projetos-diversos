@@ -521,3 +521,51 @@ div.plans {
                 margin: 0 0 5em;
             }
 
+        footer {
+            background-color: #f0ecec;
+            color: #272c34;
+            padding: 2em 2em;
+        }
+        footer a, footer button, footer li {
+            color: #272c34;
+            text-decoration: none;
+            border: none;
+            list-style: none;
+        }
+        footer button {
+            display: flex;
+            width: 100%;
+            text-align: start;
+            border-bottom: 1px solid #272c342a;
+            padding: 2.5em 0;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+        footer button p {
+            color: #272c34af;
+            display: inline;
+        }
+        footer ul {
+            display: none;
+        }
+        footer li {
+            font-size: .89em;
+        }
+        footer div {
+            border-top: 1px solid#272c342a;
+            margin-top: 2em;
+            padding-top: 2em;
+        }
+        footer div img:not(:last-child) {
+            margin: 1em 1.8em 2em 0;
+        }
+        footer div aside {
+            font-size: .8em;
+            font-weight: normal;
+            margin: 1em 0;
+        }
+        footer div aside:nth-child(5) {
+            display: flex;
+            justify-content: space-between;
+        }
+
