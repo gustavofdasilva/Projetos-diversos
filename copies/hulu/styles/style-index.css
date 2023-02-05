@@ -398,7 +398,7 @@ div.plans {
         max-width: 100%;
         width: 100%;
         border-spacing: 0;
-        border-collapse: separate;
+        border-collapse: collapse;
     }
         .table-header div{
             display: flex;
@@ -445,10 +445,12 @@ div.plans {
         tr:nth-child(2) div:nth-child(1) {
             display: inline-block;
             border-right: 1px solid #272c34;
+            border-bottom: 1px solid #272c34;
         }
         tr:nth-child(2) div:nth-child(2) {
             display: inline-block;
             float: right;
+            border-bottom: 1px solid #272c34;
         }
 
             tr:nth-child(2) div aside:nth-child(1) {
@@ -489,22 +491,33 @@ div.plans {
                 margin: 1em 0;
                 font-size: .95em;
             }
+        
+        tr:nth-child(n+3) {
+            border-bottom: 1px solid #272c34;;
+        }
 
-        tr:nth-child(3) td {
+        tr:nth-child(n+3) td {
             display: flex;
             flex-direction: column;
-            font-size: .9em;
+            font-size: .85em;
             margin: 1em 0 1em;
         }
-        tr:nth-child(3) td aside {
-            margin: 0 0 1em;
+        tr:nth-child(n+3) td aside {
+            margin: 0 1.2em 1em;
         }
-        tr:nth-child(3) td div {
+        tr:nth-child(n+3) td div {
             display: flex;
         }
-        tr:nth-child(3) td div p {
+        tr:nth-child(n+3) td div p {
             margin: 0;
             padding: 0;
-            width: 50%;
+            width: 50%
         }
+
+        tr:nth-child(12) td aside {
+            font-size: .74em;
+        }
+            tr:nth-child(12) td aside:nth-child(2) {
+                margin: 0 0 5em;
+            }
 
