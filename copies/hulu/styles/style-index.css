@@ -394,7 +394,6 @@ div.plans {
     }
 
     div.plans table{
-        border: 1px solid #272c34;
         max-width: 100%;
         width: 100%;
         border-spacing: 0;
@@ -429,7 +428,7 @@ div.plans {
             position: sticky;
             top: 0;
             background-color: #0b0c0f;
-            border: 1px solid #272c34;
+            border: 1px solid #4d535e;
             border-right: none;
             border-left: none;
         }
@@ -444,13 +443,15 @@ div.plans {
         }
         tr:nth-child(2) div:nth-child(1) {
             display: inline-block;
-            border-right: 1px solid #272c34;
-            border-bottom: 1px solid #272c34;
+            border-right: 1px solid #4d535e;
+            border-bottom: 1px solid #4d535e;
+            border-top: 1px solid #4d535e;
         }
         tr:nth-child(2) div:nth-child(2) {
             display: inline-block;
             float: right;
-            border-bottom: 1px solid #272c34;
+            border-bottom: 1px solid #4d535e;
+            border-top: 1px solid #4d535e;
         }
 
             tr:nth-child(2) div aside:nth-child(1) {
@@ -493,7 +494,7 @@ div.plans {
             }
         
         tr:nth-child(n+3) {
-            border-bottom: 1px solid #272c34;;
+            border-bottom: 1px solid #4d535e;;
         }
 
         tr:nth-child(n+3) td {
@@ -504,6 +505,12 @@ div.plans {
         }
         tr:nth-child(n+3) td aside {
             margin: 0 1.2em 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        tr:nth-child(n+3) td aside img {
+            margin: 0 .5em;
         }
         tr:nth-child(n+3) td div {
             display: flex;
@@ -523,11 +530,11 @@ div.plans {
 
         footer {
             background-color: #f0ecec;
-            color: #272c34;
-            padding: 2em 2em;
+            color: #4d535e;
+            padding: 2em 1.5em;
         }
         footer a, footer button, footer li {
-            color: #272c34;
+            color: #4d535e;
             text-decoration: none;
             border: none;
             list-style: none;
@@ -536,36 +543,49 @@ div.plans {
             display: flex;
             width: 100%;
             text-align: start;
-            border-bottom: 1px solid #272c342a;
             padding: 2.5em 0;
             font-weight: bold;
             justify-content: space-between;
         }
+            footer div:not(:last-child) {
+            border-bottom: 1px solid #4d535e2a;
+            }
         footer button p {
-            color: #272c34af;
+            color: #4d535eaf;
             display: inline;
+        }
+        footer button img {
+            filter: invert(0.79);
+            width: 1.2em;
         }
         footer ul {
             display: none;
         }
         footer li {
             font-size: .89em;
+            margin: .4em 0;
         }
-        footer div {
-            border-top: 1px solid#272c342a;
+            footer li:nth-child(4), footer li:nth-child(10), footer li:nth-child(14), footer li:nth-child(18) {
+                margin-bottom: 1.5em;
+            }
+        footer div:nth-child(4) {
+            border-top: 1px solid#4d535e2a;
             margin-top: 2em;
             padding-top: 2em;
         }
-        footer div img:not(:last-child) {
+        footer div:nth-child(4) img:not(:last-child) {
             margin: 1em 1.8em 2em 0;
         }
-        footer div aside {
+        footer div:nth-child(4) aside {
             font-size: .8em;
             font-weight: normal;
             margin: 1em 0;
         }
-        footer div aside:nth-child(5) {
+        footer div:nth-child(4) aside:nth-child(5) {
             display: flex;
             justify-content: space-between;
         }
+        footer div:nth-child(4) aside:nth-child(8) a:nth-child(2) {
+            float: right;
+        }   
 

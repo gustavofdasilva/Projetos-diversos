@@ -11,6 +11,7 @@ let logo4 = document.getElementById("lo4");
 let slides = document.getElementById("slides");
 let dropdown = document.querySelectorAll("footer ul");
 let buttonDropdown = document.querySelectorAll("footer button");
+let imgDropdown = document.querySelectorAll("footer button img");
 
 
 line.style.setProperty("left",LiveSports.getBoundingClientRect().left+"px");
@@ -90,30 +91,60 @@ function footerDropMenu(type) {
     }*/
     if(type == "browse") {
         for (let i = 0 ; i < dropdown.length ; i++) {
-            if(dropdown[i].className == "browse" && dropdown[i].style.display == "none") {
-                dropdown[i].style.setProperty("display","block");
-            } else if (dropdown[i].className == "browse") {
+            if(dropdown[i].className == "browse" && dropdown[i].style.display == "block") {
                 dropdown[i].style.setProperty("display","none");
+                for (let i = 0 ; i < imgDropdown.length ; i++) {
+                    if(imgDropdown[i].className == "browse") {
+                        imgDropdown[i].style.setProperty("transform","rotate(0deg)")
+                    }
+                }
+            } else if (dropdown[i].className == "browse") {
+                dropdown[i].style.setProperty("display","block");
+                for (let i = 0 ; i < imgDropdown.length ; i++) {
+                    if(imgDropdown[i].className == "browse") {
+                        imgDropdown[i].style.setProperty("transform","rotate(180deg)")
+                    }
+                }
             }
         }
     }
 
     if(type == "help") {
         for (let i = 0 ; i < dropdown.length ; i++) {
-            if(dropdown[i].className == "help" && dropdown[i].style.display == "none") {
-                dropdown[i].style.setProperty("display","block");
-            } else if (dropdown[i].className == "help") {
+            if(dropdown[i].className == "help" && dropdown[i].style.display == "block") {
                 dropdown[i].style.setProperty("display","none");
+                for (let i = 0 ; i < imgDropdown.length ; i++) {
+                    if(imgDropdown[i].className == "help") {
+                        imgDropdown[i].style.setProperty("transform","rotate(0deg)")
+                    }
+                }
+            } else if (dropdown[i].className == "help") {
+                dropdown[i].style.setProperty("display","block");
+                for (let i = 0 ; i < imgDropdown.length ; i++) {
+                    if(imgDropdown[i].className == "help") {
+                        imgDropdown[i].style.setProperty("transform","rotate(180deg)")
+                    }
+                }
             }
         }
     }
 
     if(type == "aboutus") {
         for (let i = 0 ; i < dropdown.length ; i++) {
-            if(dropdown[i].className == "aboutus" && dropdown[i].style.display == "none") {
-                dropdown[i].style.setProperty("display","block");
-            } else if (dropdown[i].className == "aboutus") {
+            if(dropdown[i].className == "aboutus" && dropdown[i].style.display == "block") {
                 dropdown[i].style.setProperty("display","none");
+                for (let i = 0 ; i < imgDropdown.length ; i++) {
+                    if(imgDropdown[i].className == "aboutus") {
+                        imgDropdown[i].style.setProperty("transform","rotate(0deg)")
+                    }
+                }
+            } else if (dropdown[i].className == "aboutus") {
+                dropdown[i].style.setProperty("display","block");
+                for (let i = 0 ; i < imgDropdown.length ; i++) {
+                    if(imgDropdown[i].className == "aboutus") {
+                        imgDropdown[i].style.setProperty("transform","rotate(180deg)")
+                    }
+                }
             }
         }
     }
